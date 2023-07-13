@@ -12,6 +12,21 @@
     z-index: 1;
 }
 
+.carousel-item{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-item img{
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .filtre{
     position: absolute;
     z-index: 2;
@@ -31,7 +46,7 @@
 .position{
     position: fixed;
     z-index: 3;
-    bottom: 150px;
+    top: 350px;
     color:white;
 }
 
@@ -41,7 +56,7 @@
     position: absolute;
     z-index: 2;
     top: 50px;
-    left: 50px;
+    left: 100px;
     font-size: 54px;
 }
 
@@ -49,7 +64,7 @@
     font-family: "DancingScript";
     position: fixed;
     right: 12%;
-    bottom: 35%;
+    top: 58%;
     font-size: 48px;
     margin: 0px;
 }
@@ -58,7 +73,7 @@
    font-family: "BacasimeAntique";
    position: fixed;
    right: 43%;
-   bottom: 26%;
+   top: 64%;
    font-size: 48px;
 }
 
@@ -77,4 +92,75 @@
     .btn{
         right: 36% !important;
     }
+}
+
+.portfolio{
+    font-family: "BacasimeAntique";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: #4C3D3D;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.nom{
+    font-size: 48px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.profesion{
+    margin-left: 60px;
+    font-size: 36px;
+    color: #7A7979;
+}
+
+.menu{
+    font-size: 36px;
+    display: flex;
+    align-items: baseline;
+}
+
+.about{
+    margin-right: 50px;
+    border-bottom: #4C3D3D solid 1px;
+}
+
+.contact{
+    border-bottom: #4C3D3D solid 1px;
+}
+
+.book{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 41px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.book-item{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-top: 150%;
+}
+
+.book-item img{
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
 }
