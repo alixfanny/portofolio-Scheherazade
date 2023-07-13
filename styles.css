@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "BacasimeAntique";
+    src: url("./fonts/BacasimeAntique-Regular.ttf");
+}
+@font-face {
+    font-family: "DancingScript";
+    src: url("./fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+.carousel-images{
+    position: relative;
+    z-index: 1;
+}
+
+.filtre{
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.44;
+    width:100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.d-block{
+    width:100%;
+    height: 100vh;
+}
+
+.position{
+    position: fixed;
+    z-index: 3;
+    bottom: 150px;
+    color:white;
+}
+
+.titre{
+    font-family: "BacasimeAntique";
+    color:white;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 50px;
+    font-size: 54px;
+}
+
+.citation{
+    font-family: "DancingScript";
+    position: fixed;
+    right: 12%;
+    bottom: 35%;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.auteur{
+   font-family: "BacasimeAntique";
+   position: fixed;
+   right: 43%;
+   bottom: 26%;
+   font-size: 48px;
+}
+
+.fa-instagram {
+    position: fixed;
+    right: 49%;
+    bottom: 3%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1542px) {
+    .citation{
+        right: 20%;
+    }
+    .btn{
+        right: 36% !important;
+    }
+}
