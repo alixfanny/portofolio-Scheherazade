@@ -54,7 +54,7 @@
   font-family: "DancingScript";
   position: fixed;
   right: 19%;
-  top: 58%;
+  bottom: 36%;
   font-size: 48px;
   margin: 0;
 }
@@ -62,15 +62,18 @@
   font-family: "BacasimeAntique";
   position: fixed;
   right: 43%;
-  top: 64%;
+  bottom: 26%;
   font-size: 48px;
 }
 .content-position .icon-instagram {
   position: fixed;
-  right: 49%;
+  right: 48%;
   bottom: 3%;
-  font-size: 30px;
+  font-size: 41px;
   cursor: pointer;
+  border: white 1px solid;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 @media screen and (min-width: 1542px) {
@@ -78,57 +81,57 @@
     right: 36% !important;
   }
 }
-.div-portfolio {
+.div {
   font-family: "BacasimeAntique";
 }
-.div-portfolio .portfolio-header {
+.div .header {
   display: flex;
   justify-content: space-between;
   color: #4C3D3D;
-  margin-right: 5%;
-  margin-top: 3%;
-  margin-left: 5%;
+  margin: 3% 5% 0% 5%;
 }
-.div-portfolio .portfolio-header .brandname {
+.div .header .brandname {
   display: flex;
   flex-direction: column;
 }
-.div-portfolio .portfolio-header .brandname .brandname-name {
+.div .header .brandname .brandname-name {
   font-size: 48px;
   margin: 0;
   cursor: pointer;
 }
-.div-portfolio .portfolio-header .brandname .brandname-work {
-  margin-left: 22%;
+.div .header .brandname .brandname-work {
   font-size: 36px;
   color: #7A7979;
 }
-.div-portfolio .portfolio-header .menu {
+.div .header .menu {
   font-size: 36px;
   display: flex;
   align-items: baseline;
 }
-.div-portfolio .portfolio-header .menu .about {
+.div .header .menu .about {
   margin-right: 50px;
-  border-bottom: #4C3D3D solid 1px;
+  border-bottom: solid 1px #4C3D3D;
+  cursor: pointer;
 }
-.div-portfolio .portfolio-header .menu .contact {
-  border-bottom: #4C3D3D solid 1px;
+.div .header .menu .contact {
+  border-bottom: solid 1px #4C3D3D;
+  cursor: pointer;
 }
-.div-portfolio .book {
+
+.book {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   gap: 0.8% 2.4%;
   margin-left: 5%;
   margin-top: 1%;
 }
-.div-portfolio .book .book-item {
+.book .book-item {
   position: relative;
   overflow: hidden;
   height: 0;
   padding-top: 150%;
 }
-.div-portfolio .book .book-item img {
+.book .book-item img {
   position: absolute;
   width: auto;
   height: auto;

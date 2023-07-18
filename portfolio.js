@@ -110,6 +110,18 @@ homePage.addEventListener("click", function(event) {
     window.location.href = 'homePage.html';
 })
 
+/*const about = document.querySelector(".about");
+about.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = 'about.html';
+})
+
+const contact = document.querySelector(".contact");
+about.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.location.href = 'contact.html';
+})*/
+
 addImages()
 
 

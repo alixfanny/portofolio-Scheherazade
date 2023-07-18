@@ -14,11 +14,11 @@ $border-bottom: solid 1px #4C3D3D;
 @font-face {
     font-family: "BacasimeAntique";
     src: url("./fonts/BacasimeAntique-Regular.ttf");
+}
 
-    &.script {
-        font-family: "DancingScript";
-        src: url("./fonts/DancingScript-VariableFont_wght.ttf");
-    }
+@font-face {
+    font-family: "DancingScript";
+    src: url("./fonts/DancingScript-VariableFont_wght.ttf");
 }
 
 .article-carousel-images{
@@ -81,10 +81,13 @@ $border-bottom: solid 1px #4C3D3D;
     }
     
     .icon-instagram {
-        @include position-fixed(49%, 3%);
-        font-size: 30px;
+        @include position-fixed(48%, 3%);
+        font-size: 41px;
         cursor: pointer;
-    }
+        border: white 1px solid;
+        border-radius: 50%;
+        padding: 10px;
+      }
 }
 
 @media screen and (min-width: 1542px) {
@@ -93,10 +96,10 @@ $border-bottom: solid 1px #4C3D3D;
     }
 }
 
-.div-portfolio{
+.div {
     font-family: "BacasimeAntique";
 
-    .portfolio-header{
+    .header{
         display: flex;
         justify-content: space-between;
         color: #4C3D3D;
@@ -113,7 +116,6 @@ $border-bottom: solid 1px #4C3D3D;
             }
             
             .brandname-work{
-                margin-left: 22%;
                 font-size: $font-size-medium;
                 color: #7A7979;
             }
@@ -127,37 +129,39 @@ $border-bottom: solid 1px #4C3D3D;
             .about{
                 margin-right: 50px;
                 border-bottom: $border-bottom;
+                cursor: pointer;
             }
             
             .contact{
                 border-bottom: $border-bottom;
+                cursor: pointer;
             }
         }
     }
+}
 
-    .book{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        gap: 0.8% 2.4%;;
-        margin-left: 5%;
-        margin-top: 1%;
+.book{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 0.8% 2.4%;;
+    margin-left: 5%;
+    margin-top: 1%;
 
-        .book-item{
-            position: relative;
-            overflow: hidden;
-            height: 0;
-            padding-top: 150%;
+    .book-item{
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        padding-top: 150%;
 
-            & img{
-                position: absolute;
-                width: auto;
-                height: auto;
-                min-width: 100%;
-                max-height: 100%;
-                top: 50%;
-                transform: translateY(-50%) translateX(-50%);
-                left: 50%;
-            }
+        & img{
+            position: absolute;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            max-height: 100%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%;
         }
     }
 }
