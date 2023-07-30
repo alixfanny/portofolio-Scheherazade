@@ -165,3 +165,21 @@ $border-bottom: solid 1px #4C3D3D;
         }
     }
 }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -574%;
+    border-top: solid 1px white;
+    width: 90.1vw;
+    margin: 5%;
+    background-color: #4C3D3D;
+
+    p{
+        font-family: "BacasimeAntique";
+        color: white;
+        font-size: 20px;
+        padding: 0.5% 2% 0% 2%;
+    }
+}
