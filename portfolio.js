@@ -107,7 +107,7 @@ function addImage(src, alt){
 const homePage = document.querySelector(".brandname-name");
 homePage.addEventListener("click", function(event) {
     event.preventDefault();
-    window.location.href = 'homePage.html';
+    window.location.href = 'index.html';
 })
 
 /*const about = document.querySelector(".about");
