@@ -3,6 +3,25 @@ $font-size-large: 48px;
 $font-size-medium: 36px;
 $border-bottom: solid 1px #4C3D3D;
 
+// Défini les variables
+$breakpoints: (
+small: 576px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1200px
+);
+
+// mixin media queries
+@mixin for-size($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint){
+    @media (max-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+    }@else{
+        @warn "Unknown breakpoint: #{$breakpoint}."
+    }
+};
+
 // Déclaration des mixin
 @mixin position-fixed($right, $bottom) {
     position: fixed;
@@ -25,6 +44,11 @@ $border-bottom: solid 1px #4C3D3D;
     position: relative;
     z-index: 1;
 
+    @include for-size(small){
+        top: 11%;
+        position: absolute;
+    }
+
     .carousel-item{
         position: relative;
         width: 100vw;
@@ -37,14 +61,18 @@ $border-bottom: solid 1px #4C3D3D;
             max-width: 100vw;
             top: 0;
             left: 0;
+
+            @include for-size(small){
+                height: 50vh;
+            }
         }
     }
 }
 
 .overlay-filter{
-    position: absolute;
+    //position: relative;
     z-index: 2;
-    background-color: black;
+    //background-color: black;
     opacity: 0.44;
     width:100vw;
     height: 100vh;
@@ -60,6 +88,12 @@ $border-bottom: solid 1px #4C3D3D;
     top: 6%;
     left: 4%;
     font-size: 54px;
+
+    @include for-size(small){
+        top: 2%;
+        left: 7%;
+        color: #4C3D3D;
+    }
 }
 
 .content-position{
@@ -72,12 +106,27 @@ $border-bottom: solid 1px #4C3D3D;
         @include position-fixed(19%, 36%);
         font-size: $font-size-large;
         margin: 0;
+
+        @include for-size(small){
+            color: #4C3D3D;
+            font-size: 23px;
+            bottom: 31%;
+            left: 16%;
+        }
     }
     
     .quote-author{
        font-family: "BacasimeAntique";
        @include position-fixed(43%, 26%);
        font-size: $font-size-large;
+
+       @include for-size(small){
+            left: 37%;
+            right: 0%;
+            color: #4C3D3D;
+            font-size: 23px;
+            bottom: 24%;
+        }
     }
     
     .icon-instagram {
@@ -87,7 +136,24 @@ $border-bottom: solid 1px #4C3D3D;
         border: white 1px solid;
         border-radius: 50%;
         padding: 10px;
+
+        @include for-size(small){
+            color: #4C3D3D !important;
+            border: #4C3D3D 1px solid;
+            font-size: 23px;
+            right: 45%;
+        }
       }
+}
+
+@include for-size(small){
+    .button-portfolio-access{
+        right: 19% !important;
+        color: #4C3D3D !important;
+        font-size: 28px !important;
+        top: 79% !important;
+        border: #4C3D3D 2px solid !important;
+    }
 }
 
 @media screen and (min-width: 1542px) {
@@ -147,11 +213,21 @@ $border-bottom: solid 1px #4C3D3D;
     margin-left: 5%;
     margin-top: 1%;
 
+    @include for-size(small){
+        margin-left: 3%;
+        margin-right: 3%;
+        display: block;
+    }
+
     .book-item{
         position: relative;
         overflow: hidden;
         height: 0;
         padding-top: 150%;
+
+        @include for-size(small){
+            margin-top: 4%;
+        }
 
         & img{
             position: absolute;
@@ -167,14 +243,18 @@ $border-bottom: solid 1px #4C3D3D;
 }
 
 footer{
-    display: flex;
-    justify-content: space-between;
     position: absolute;
-    bottom: -587%;
+    bottom: -575%;
     border-top: solid 1px white;
     width: 90.1vw;
     margin: 5%;
     background-color: #4C3D3D;
+
+    @include for-size(small){
+        position: relative;
+        margin: 3%;
+        width: 94.1%;
+    }
 
     p{
         font-family: "BacasimeAntique";
