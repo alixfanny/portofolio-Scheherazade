@@ -70,9 +70,9 @@ small: 576px,
 }
 
 .overlay-filter{
-    //position: relative;
+    position: absolute;
     z-index: 2;
-    //background-color: black;
+    background-color: black;
     opacity: 0.44;
     width:100vw;
     height: 100vh;
