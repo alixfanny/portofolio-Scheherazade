@@ -92,6 +92,7 @@ $breakpoints: (
     @include for-size(small){
         top: 1%;
         left: 8%;
+        font-size: $font-size-large;
     }
 }
 
