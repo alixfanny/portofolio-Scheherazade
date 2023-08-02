@@ -61,7 +61,9 @@ $breakpoints: (
             left: 0;
 
             @include for-size(small){
-                height: 50vh;
+                height: 1000vh;
+                max-height: 100vh;
+
             }
         }
     }
@@ -88,66 +90,63 @@ $breakpoints: (
     font-size: 54px;
 
     @include for-size(small){
+        top: 1%;
+        left: 8%;
     }
 }
 
 .content-position{
-    position: fixed;
+    position: absolute;
     z-index: 3;
     color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 12%;
+    top: 50%;
+    height: 444px;
+
+    @include for-size(small){
+        right: 0%;
+    }
 
     .quote-text{
         font-family: "DancingScript";
-        @include position-fixed(12%, 36%);
         font-size: $font-size-large;
-        margin: 0;
 
         @include for-size(small){
-            color: #4C3D3D;
             font-size: 23px;
-            bottom: 31%;
-            left: 16%;
         }
     }
     
     .quote-author{
        font-family: "BacasimeAntique";
-       @include position-fixed(42%, 26%);
        font-size: $font-size-large;
 
        @include for-size(small){
-            left: 37%;
-            right: 0%;
-            color: #4C3D3D;
             font-size: 23px;
-            bottom: 24%;
         }
+    }
+
+    a{
+        margin-bottom: 25px
     }
     
     .icon-instagram {
-        @include position-fixed(48%, 3%);
         font-size: 36px;
         cursor: pointer;
         border: white 1px solid;
         border-radius: 50%;
         padding: 10px;
 
-        @include for-size(small){
-            color: #4C3D3D !important;
-            border: #4C3D3D 1px solid;
-            font-size: 23px;
-            right: 45%;
-        }
+        
       }
 }
 
 @include for-size(small){
     .button-portfolio-access{
-        right: 19% !important;
-        color: #4C3D3D !important;
         font-size: 28px !important;
-        top: 79% !important;
-        border: #4C3D3D 2px solid !important;
     }
 }
 

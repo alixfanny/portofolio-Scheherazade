@@ -25,7 +25,8 @@
 }
 @media (max-width: 576px) {
   .article-carousel-images .carousel-item img {
-    height: 50vh;
+    height: 1000vh;
+    max-height: 100vh;
   }
 }
 
@@ -49,69 +50,62 @@
   left: 4%;
   font-size: 54px;
 }
+@media (max-width: 576px) {
+  .title-name {
+    top: 1%;
+    left: 8%;
+  }
+}
+
 .content-position {
-  position: fixed;
+  position: absolute;
   z-index: 3;
   color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 12%;
+  top: 50%;
+  height: 444px;
+}
+@media (max-width: 576px) {
+  .content-position {
+    right: 0%;
+  }
 }
 .content-position .quote-text {
   font-family: "DancingScript";
-  position: fixed;
-  right: 12%;
-  bottom: 36%;
   font-size: 48px;
-  margin: 0;
 }
 @media (max-width: 576px) {
   .content-position .quote-text {
-    color: #4C3D3D;
     font-size: 23px;
-    bottom: 31%;
-    left: 16%;
   }
 }
 .content-position .quote-author {
   font-family: "BacasimeAntique";
-  position: fixed;
-  right: 42%;
-  bottom: 26%;
   font-size: 48px;
 }
 @media (max-width: 576px) {
   .content-position .quote-author {
-    left: 37%;
-    right: 0%;
-    color: #4C3D3D;
     font-size: 23px;
-    bottom: 24%;
   }
 }
+.content-position a {
+  margin-bottom: 25px;
+}
 .content-position .icon-instagram {
-  position: fixed;
-  right: 48%;
-  bottom: 3%;
   font-size: 36px;
   cursor: pointer;
   border: white 1px solid;
   border-radius: 50%;
   padding: 10px;
 }
-@media (max-width: 576px) {
-  .content-position .icon-instagram {
-    color: #4C3D3D !important;
-    border: #4C3D3D 1px solid;
-    font-size: 23px;
-    right: 45%;
-  }
-}
 
 @media (max-width: 576px) {
   .button-portfolio-access {
-    right: 19% !important;
-    color: #4C3D3D !important;
     font-size: 28px !important;
-    top: 79% !important;
-    border: #4C3D3D 2px solid !important;
   }
 }
 @media screen and (min-width: 1542px) {
