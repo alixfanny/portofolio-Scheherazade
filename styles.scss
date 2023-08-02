@@ -5,7 +5,7 @@ $border-bottom: solid 1px #4C3D3D;
 
 // Défini les variables
 $breakpoints: (
-small: 576px,
+    small: 576px,
     medium: 768px,
     large: 992px,
     xlarge: 1200px
@@ -45,8 +45,6 @@ small: 576px,
     z-index: 1;
 
     @include for-size(small){
-        top: 11%;
-        position: absolute;
     }
 
     .carousel-item{
@@ -90,9 +88,6 @@ small: 576px,
     font-size: 54px;
 
     @include for-size(small){
-        top: 2%;
-        left: 7%;
-        color: #4C3D3D;
     }
 }
 
@@ -103,7 +98,7 @@ small: 576px,
 
     .quote-text{
         font-family: "DancingScript";
-        @include position-fixed(19%, 36%);
+        @include position-fixed(12%, 36%);
         font-size: $font-size-large;
         margin: 0;
 
@@ -117,7 +112,7 @@ small: 576px,
     
     .quote-author{
        font-family: "BacasimeAntique";
-       @include position-fixed(43%, 26%);
+       @include position-fixed(42%, 26%);
        font-size: $font-size-large;
 
        @include for-size(small){
@@ -131,7 +126,7 @@ small: 576px,
     
     .icon-instagram {
         @include position-fixed(48%, 3%);
-        font-size: 41px;
+        font-size: 36px;
         cursor: pointer;
         border: white 1px solid;
         border-radius: 50%;
@@ -159,6 +154,8 @@ small: 576px,
 @media screen and (min-width: 1542px) {
     .button-portfolio-access{
         right: 36% !important;
+        top: 76% !important;
+        font-size: 47px !important;
     }
 }
 

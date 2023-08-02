@@ -10,12 +10,6 @@
   position: relative;
   z-index: 1;
 }
-@media (max-width: 576px) {
-  .article-carousel-images {
-    top: 11%;
-    position: absolute;
-  }
-}
 .article-carousel-images .carousel-item {
   position: relative;
   width: 100vw;
@@ -55,14 +49,6 @@
   left: 4%;
   font-size: 54px;
 }
-@media (max-width: 576px) {
-  .title-name {
-    top: 2%;
-    left: 7%;
-    color: #4C3D3D;
-  }
-}
-
 .content-position {
   position: fixed;
   z-index: 3;
@@ -71,7 +57,7 @@
 .content-position .quote-text {
   font-family: "DancingScript";
   position: fixed;
-  right: 19%;
+  right: 12%;
   bottom: 36%;
   font-size: 48px;
   margin: 0;
@@ -87,7 +73,7 @@
 .content-position .quote-author {
   font-family: "BacasimeAntique";
   position: fixed;
-  right: 43%;
+  right: 42%;
   bottom: 26%;
   font-size: 48px;
 }
@@ -104,7 +90,7 @@
   position: fixed;
   right: 48%;
   bottom: 3%;
-  font-size: 41px;
+  font-size: 36px;
   cursor: pointer;
   border: white 1px solid;
   border-radius: 50%;
@@ -131,6 +117,8 @@
 @media screen and (min-width: 1542px) {
   .button-portfolio-access {
     right: 36% !important;
+    top: 76% !important;
+    font-size: 47px !important;
   }
 }
 .div {
