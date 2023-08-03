@@ -40,4 +40,10 @@ function checkSize() {
   
 window.addEventListener('resize', checkSize);
 window.addEventListener('load', checkSize);
-  
+
+// Ajout de la fonction de chargement
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    document.getElementById('loader-wrapper').style.display = 'none';
+  }, 2000); // 2 secondes
+});
