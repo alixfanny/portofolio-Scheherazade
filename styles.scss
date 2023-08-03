@@ -80,82 +80,86 @@ $breakpoints: (
     left: 0;
 }
 
-.title-name{
-    font-family: "BacasimeAntique";
-    color:white;
-    position: absolute;
-    z-index: 2;
-    top: 6%;
-    left: 4%;
-    font-size: 54px;
+.container{
+    position: fixed;
+    top: 0%;
+    z-index: 5;
 
-    @include for-size(small){
-        top: 1%;
-        left: 8%;
-        font-size: $font-size-large;
-    }
-}
-
-.content-position{
-    position: absolute;
-    z-index: 3;
-    color:white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    right: 12%;
-    top: 50%;
-    height: 444px;
-
-    @include for-size(small){
-        right: 0%;
-    }
-
-    .quote-text{
-        font-family: "DancingScript";
-        font-size: $font-size-large;
+    .title-name{
+        font-family: "BacasimeAntique";
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 6%;
+        left: 3%;
+        font-size: 54px;
 
         @include for-size(small){
-            font-size: 23px;
-        }
-    }
-    
-    .quote-author{
-       font-family: "BacasimeAntique";
-       font-size: $font-size-large;
-
-       @include for-size(small){
-            font-size: 23px;
+            top: 1%;
+            left: 12%;
+            font-size: 38px;
         }
     }
 
-    a{
-        margin-bottom: 25px
-    }
-    
-    .icon-instagram {
-        font-size: 36px;
-        cursor: pointer;
-        border: white 1px solid;
-        border-radius: 50%;
-        padding: 10px;
+    .article-content{
+        position: fixed;
+        bottom: 3%;
+        right: 14%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 48px;
 
-        
-      }
-}
+        .quote-text{
+            margin: 0px;
+            font-family: "DancingScript";
+            font-size: $font-size-large;
 
-@include for-size(small){
-    .button-portfolio-access{
-        font-size: 28px !important;
-    }
-}
+            @include for-size(small){
+                font-size: 23px;
+            }
+        }
 
-@media screen and (min-width: 1542px) {
-    .button-portfolio-access{
-        right: 36% !important;
-        top: 76% !important;
-        font-size: 47px !important;
+        .quote-author{
+            font-family: "BacasimeAntique";
+            font-size: $font-size-large;
+     
+            @include for-size(small){
+                font-size: 20px;
+            }
+         }
+
+        a{
+            margin-bottom: 5%;
+            margin-top: 5%;
+
+            @include for-size(small){
+                margin-bottom: 11%;
+                margin-top: -5%;
+            }
+
+            .button-portfolio-access{
+                font-size: 47px;
+
+                @include for-size(small){
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .icon-instagram {
+            font-size: 36px;
+            cursor: pointer;
+            
+            &::before {
+                content: "\f16d";
+                border: white 1px solid;
+                border-radius: 50%;
+                padding: 10px;
+            }
+            
+        }
     }
 }
 
