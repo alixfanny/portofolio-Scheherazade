@@ -137,7 +137,7 @@ $breakpoints: (
 
         @include for-size(small){
             top: 1%;
-            left: 12%;
+            left: 14%;
             font-size: 30px;
         }
     }
@@ -151,6 +151,11 @@ $breakpoints: (
         flex-direction: column;
         text-align: center;
         font-size: 48px;
+
+        @include for-size(small){
+            right: 0;
+            width: 500px;
+        }
 
         .quote-text{
             margin: 0px;
