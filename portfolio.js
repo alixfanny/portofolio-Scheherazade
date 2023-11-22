@@ -1,5 +1,8 @@
-
 const photos = [
+    {
+        src: "./img/portfolio/0.jpg",
+        alt: "Schéhérazade portfolio",
+    },
     {
         src: "./img/portfolio/1.jpg",
         alt: "Schéhérazade portfolio",
@@ -82,6 +85,26 @@ const photos = [
     },
     {
         src: "./img/portfolio/21.jpg",
+        alt: "Schéhérazade portfolio",
+    },
+    {
+        src: "./img/portfolio/22.jpg",
+        alt: "Schéhérazade portfolio",
+    },
+    {
+        src: "./img/portfolio/23.jpg",
+        alt: "Schéhérazade portfolio",
+    },
+    {
+        src: "./img/portfolio/24.jpg",
+        alt: "Schéhérazade portfolio",
+    },
+    {
+        src: "./img/portfolio/25.jpg",
+        alt: "Schéhérazade portfolio",
+    },
+    {
+        src: "./img/portfolio/26.jpg",
         alt: "Schéhérazade portfolio",
     },
 ]
