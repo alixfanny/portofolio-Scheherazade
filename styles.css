@@ -109,11 +109,12 @@
 .container .article-content {
   position: fixed;
   bottom: 3%;
-  right: 14%;
+  right: 8%;
   color: white;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 48px;
 }
 @media (max-width: 576px) {
@@ -125,7 +126,8 @@
 .container .article-content .quote-text {
   margin: 0px;
   font-family: "DancingScript";
-  font-size: 48px;
+  font-size: 54px;
+  width: 80%;
 }
 @media (max-width: 576px) {
   .container .article-content .quote-text {
@@ -134,7 +136,7 @@
 }
 .container .article-content .quote-author {
   font-family: "BacasimeAntique";
-  font-size: 48px;
+  font-size: 34px;
 }
 @media (max-width: 576px) {
   .container .article-content .quote-author {
@@ -142,8 +144,7 @@
   }
 }
 .container .article-content a {
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 2%;
 }
 @media (max-width: 576px) {
   .container .article-content a {
